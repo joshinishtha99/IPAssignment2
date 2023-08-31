@@ -1,5 +1,11 @@
 
 body {
+    
+    background-image: url('background_image.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
@@ -8,11 +14,21 @@ body {
 
 
 header {
+    margin: 20px;
+    border: 2px solid red; 
     background-color: #c8e4ff;
     color: #fff;
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+    font-family: "My Font";
+    src: url("myfont.ttf");
+}
+
+h1 {
+    font-family: "My Font";
 }
 
 
@@ -23,7 +39,6 @@ section {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
 
 h1, h2 {
     margin: 0;
@@ -42,13 +57,13 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
+/* List styles */
 ul {
     list-style-type: disc;
     padding-left: 2rem;
 }
 
-
+/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -59,28 +74,32 @@ th, td {
     border-bottom: 1px solid #ccc;
 }
 
+/* Specific section background colors */
+/* ... previous CSS rules ... */
 
+/* Make certain sections transparent */
 #about, #media {
-    background-color: #f0e5cf;
+    background-color: rgba(240, 229, 207, 0.7); /* Transparent light yellow color */
 }
 
 #skills, #contact {
-    background-color: #c8e4ff;
+    background-color: rgba(200, 228, 255, 0.7); /* Transparent light blue color */
 }
 
-
-#about {
-    background-color: #f0e5cf;
-}
+/* ... rest of the CSS rules ... */
 
 
+
+
+
+/* Borders and padding for specific sections */
 #media, #contact, #skills {
     border: 2px solid #ccc;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Custom paragraph styles */
 .custom-paragraph {
     padding: 10px;
     font-size: 1.2rem;
@@ -89,7 +108,7 @@ th, td {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Custom styles for the marquee */
 .custom-marquee {
     background-color: #0ddda9;
     color: #fff;
@@ -99,7 +118,72 @@ th, td {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+.skill-table {
+    width: 50%; /* Set the table width to 50% */
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+.skill-table th, .skill-table td {
+    padding: 0.8rem 1.5rem; /* Adjust padding for better cell spacing */
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 50%; /* Set the cell width to 50% */
+}
+
+.skill-table th {
+    background-color: #ff5555; /* Red background for header */
+    color: #fff; /* White text color for header */
+    text-shadow: none; /* Remove text shadow from header */
+}
+
+.skill-table tr:nth-child(even) {
+    background-color: #fff; /* White background for even rows */
+}
+
+.skill-table tr:nth-child(odd) {
+    background-color: #f8f8f8; /* Light gray background for odd rows */
+}
+
+/* ... previous CSS rules ... */
+
+/* Additional styles for the contact section */
+#contact {
+    background-color: rgba(200, 228, 255, 0.7); /* Transparent light blue color */
+    padding: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-label {
+    width: 100px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-value {
+    flex: 1;
+}
+
+/* ... rest of the CSS rules ... */
+
+
 .name-border {
+    
     border: 2px solid #3d7a99;
     padding: 10px;
     border-radius: 10px;
